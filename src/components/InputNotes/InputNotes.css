@@ -1,0 +1,40 @@
+.note-creation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.input-field{
+    background: transparent;
+    outline: none;
+    color: white;
+    margin: 4% 0;
+    padding: 0.5% ;
+    border: none;
+    border-bottom: 1px white solid;
+    height: 40px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.add-button{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border: none;
+    background:  #ee9ca7;
+    color: #fff;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-plus'%3E%3Cline x1='12' y1='5' x2='12' y2='19'/%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3C/svg%3E"); */
+    background-size: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 12px 0 var(--add-button-shadow);
+
+}
+
+.add-button:hover{
+    border: 5px #e2344b;
+}
+
