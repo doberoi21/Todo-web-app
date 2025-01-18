@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { addNote } from "../../redux/actions";
 import "./InputNotes.css";
 import {  useDispatch } from "react-redux";
+import AddIcon from '@mui/icons-material/Add';
 
 const InputNotes = () => {
   const [title, setTitle] = useState("");
@@ -27,7 +28,9 @@ const InputNotes = () => {
           onChange={handleText}
           value={title}
         />
-        <button className="add-button" onClick={handleClick} />
+        <button className="add-button" onClick={handleClick} >
+        <AddIcon style={{marginTop:'2.5px',marginRight:'1px'}} />
+        </button>
       </div>
     </>
   );

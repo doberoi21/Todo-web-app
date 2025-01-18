@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./NotesItem.css";
 import { useDispatch } from "react-redux";
 import { editNote, deleteNote } from "../../redux/actions/index";
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import DoneIcon from '@mui/icons-material/Done';
+import ClearIcon from '@mui/icons-material/Clear';
 
 const NotesItem = (props) => {
   const [edit, setEdit] = useState(false);
@@ -45,13 +49,13 @@ const NotesItem = (props) => {
             setText(props.title);
           }}
         >
-          Edit
+          <EditIcon />
         </button>
         <button
           className="delete"
           onClick={() => dispatch(deleteNote(props.index))}
         >
-          Del
+          <DeleteIcon />
         </button>
       </div>
     );
@@ -66,10 +70,10 @@ const NotesItem = (props) => {
             setEdit(false);
           }}
         >
-          Done
+          <DoneIcon />
         </button>
         <button className="delete" onClick={() => setEdit(false)}>
-          Cancel
+          <ClearIcon />
         </button>
       </div>
     );
